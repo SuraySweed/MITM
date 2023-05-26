@@ -1,0 +1,48 @@
+Listening on localhost: 8000
+
+<----- Request Start ----->
+
+/login
+
+
+<------- Request End ------->
+
+Parse query: 
+Parsed output dictionary: None
+
+<----- Request Start ----->
+
+/post_login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 43
+
+
+b"username='Alex'&password='C0mput3rS3curity'"
+<------- Request End ------->
+
+Parse query: username=Alex&password=C0mput3rS3curity
+Parsed output dictionary: {'username': 'Alex', 'password': 'C0mput3rS3curity'}
+HERE
+
+<----- Request Start ----->
+
+/download_file?cookie=supersecretcoookie\r\n\r\
+
+
+<------- Request End ------->
+
+Parse query: cookie=supersecretcoookie
+Parsed output dictionary: {'cookie': 'supersecretcoookie'}
+
+<----- Request Start ----->
+
+/post_logout
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 26
+
+
+b"I WANT TO LOG OUT PLEASE!'"
+<------- Request End ------->
+
+Parse query: I WANT TO LOG OUT PLEASE!
+Parsed output dictionary: None
